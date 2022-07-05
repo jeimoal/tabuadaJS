@@ -3,18 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link src="tabuadaJS.css" rel="stylesheet" type="text/css">
+	<script src="tabuadaJS.js"></script>
 </head>
 <body>
-		<p>Digite um número abaixo:</p>
-		<input type="number" id="numeroDigitado" autofocus/>
-		<input type="button" value="Enviar" id="enviar"/>
-		<input type="button" value="Limpar" id="limpar" disabled/>
-		<div id ="tabuada">
-			<p id="resultSoma" class="resultados"></p>
-			<p id="resultSub" class="resultados"></p>
-			<p id="resulMult" class="resultados"></p>
-			<p id="resulDiv" class="resultados"></p>
-		</div>
+	<div class="wrapper">
+		<header class="espacamento">
+			<h1>Tabuada - operações básicas</h1>
+		</header>
+		<main>
+			<div id="botoes">
+				<input type="number" id="numeroDigitado" placeholder="Digite um número" autofocus/>
+				<input type="button" value="Enviar" id="enviar" class="btnTam"/>
+				<input type="button" value="Limpar" id="limpar" class="btnTam" disabled/>
+			</div>
+			<div id ="tabuada">
+				<p id="resultSoma" class="resultados espacamento"></p>
+				<p id="resultSub" class="resultados espacamento"></p>
+				<p id="resulMult" class="resultados espacamento"></p>
+				<p id="resulDiv" class="resultados espacamento"></p>
+			</div>
+		</main>
+	</div>
 </body>
 </html>
