@@ -1,85 +1,85 @@
 @import url("https://fonts.googleapis.com/css?family=Helvetica");
 @import url("https://fonts.googleapis.com/css?family=Verdana");
 
-	:root {
+:root {
 	--bgColor: linear-gradient(to bottom right, #66ccff 0%, #66ffff 100%);
 	--btnColor: cyan;
-	}
+}
 	
-	* {
+* {
 	margin: 0;
-	paddding: 0
-	}
+	padding: 0
+}
 
-	html {
+html {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	}
+}
 	
-	html, body {
+html, body {
 	height: 100%;
 	font-family: Helvetica, Verdana, sans-serif;
-	}
+}
 
-	.espacamento {
+.espacamento {
 	padding: 0.5rem;
 	margin: 0.6rem;
-	}
+}
 
-	.btnTam {
+.btnTam {
 	height: 1.4rem;
 	background: var(--btnColor);
 	border-style: none;
 	border-radius: 5%;
-	}
+}
 
-	.btnTam:hover, .btnTam:focus {
+.btnTam:hover, .btnTam:focus {
 	background-color: #99ff33;
 	outline: none;
-	}
+}
 
-	#numeroDigitado {
+#numeroDigitado {
 	height: 1.4rem;
 	border-style: none;
-	}
+}
 
 	#numeroDigitado:focus {
 	background-color: #99ff33;
 	outline: none;
-	}
+}
 
-	.wrapper, main {
+.wrapper, main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	}
+}
 
-	body {
+body {
 	max-width: 100%;
 	background: var(--bgColor);
-	}
+}
 
-	header {
+header {
 	text-align: center;
-	}
+}
 
-	h1 {
+h1 {
 	text-transform: capitalize;
 	font-family: Verdana;
-	}
+}
 
-	#tabuada {
+#tabuada {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-flow: row wrap;
 	margin-top: 1rem;
-	}
+}
 
-	.resultados {
+.resultados {
 	font-family: Verdana;
 	text-align: left;
 	width: 7.5rem;
@@ -88,4 +88,4 @@
 	border-radius: 0.4rem;
 	background-color: white;
 	overflow: hidden;
-	}
+}
