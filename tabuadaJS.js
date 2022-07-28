@@ -10,6 +10,8 @@ rSubt : null,
 rMult : null,
 rDiv : null,
 
+tblCnvs: null,
+
 init : () => {
 	numT = document.getElementById('numT');
 	sndBtn = document.getElementById('sndBtn');
@@ -20,19 +22,35 @@ init : () => {
 	rMult = document.getElementById('rMult');
 	rDiv = document.getElementById('rDiv');
 
+	tblCnvs = document.getElementsByClassName('resultados');
+
 	numT.focus();
 	clrBtn.hidden = true;
 	sndBtn.addEventListener('click', tbl.vld);
-	clrBtn.addEventListener('click', rSubt);
+	clrBtn.addEventListener('click', tbl.rSubt);
 },
 
 vld : () => {
 	if (numT.value !== "") {
-		cta = tbl.calc();
+		tbl.calc();
+		sndBtn.disabled = true;
+		numT.disabled = true;
+		clrBtn.hidden = false;
 	} else {
 		window.alert("Type a number");
 		numT.focus();
 	}
+},
+
+rSubt: () => {
+	let tabCanv = tblCnvs;
+	for(i = 0; i < tabCanv.length; i++) {
+		tblCnvs[i].textContent = "";
+	}
+	clrBtn.hidden = true;
+	numT.disabled = false;
+	sndBtn.disabled = false;
+	numT.value = "";
 },
 
 calc : () => {
