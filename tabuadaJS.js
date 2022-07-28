@@ -68,9 +68,9 @@ calc : () => {
 	//divi calculation
 	para = rDiv;
 	for(ct = 1; ct <= 10; ct++) {
-		rslt = Number(numT.value) * ct;
+		rslt = Number(numT.value) / ct;
 		rsltT = document.createElement('p');
-		rsltT.textContent = `${numT.value} * ${ct} = ${rslt}`;
+		rsltT.textContent = `${numT.value} / ${ct} = ${rslt}`;
 		para.appendChild(rsltT);
 	}
 
